@@ -1,0 +1,10 @@
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/bin/Debug/netstandard2.0/SkeleArtifact.deps.json
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/bin/Debug/netstandard2.0/SkeleArtifact.dll
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/bin/Debug/netstandard2.0/SkeleArtifact.pdb
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.csproj.AssemblyReference.cache
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.GeneratedMSBuildEditorConfig.editorconfig
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.AssemblyInfoInputs.cache
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.AssemblyInfo.cs
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.csproj.CoreCompileInputs.cache
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.dll
+/home/pseudopulse/Code/skeleartifact/SkeleArtifact/obj/Debug/netstandard2.0/SkeleArtifact.pdb

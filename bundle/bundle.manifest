@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2200016073
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: skelebundle
+      Dependencies: {}
