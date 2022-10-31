@@ -30,14 +30,15 @@ namespace SkeleArtifact {
         public void Awake() {
             bundle = AssetBundle.LoadFromFile(Assembly.GetExecutingAssembly().Location.Replace("SkeleArtifact.dll", "skelebundle"));
 
-            GameObject prefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Beetle/BeetleBody.prefab").WaitForCompletion().InstantiateClone("skeletonbody");
-            GameObject prefabMaster = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Beetle/BeetleMaster.prefab").WaitForCompletion().InstantiateClone("skeletonmaster");
+            GameObject prefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Merc/MercBody.prefab").WaitForCompletion().InstantiateClone("skeletonbody");
+            GameObject prefabMaster = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Merc/MercMonsterMaster.prefab").WaitForCompletion().InstantiateClone("skeletonmaster");
             CharacterBody body = prefab.GetComponent<CharacterBody>();
             body.baseMoveSpeed = 7;
             body.baseMaxHealth = 10000000;
             body.baseArmor = 10000000;
             body.baseDamage = 100000000;
             body.baseNameToken = "SKELETON_NAME";
+            body.portraitIcon = bundle.LoadAsset<Sprite>("Assets/ulley.png").texture;
 
             LanguageAPI.Add("SKELETON_NAME", "The Skeleton");
 
@@ -74,6 +75,9 @@ namespace SkeleArtifact {
             SkillDef lockedDef = Addressables.LoadAssetAsync<SkillDef>("RoR2/Base/Captain/CaptainSkillDisconnected.asset").WaitForCompletion();
 
             ReplaceSkill(sl.primary, lockedDef);
+            ReplaceSkill(sl.secondary, lockedDef);
+            ReplaceSkill(sl.utility, lockedDef);
+            ReplaceSkill(sl.special, lockedDef);
 
             prefabMaster.GetComponent<CharacterMaster>().bodyPrefab = prefab;
 
